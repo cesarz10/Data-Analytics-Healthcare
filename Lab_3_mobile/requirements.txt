@@ -1,0 +1,6 @@
+pandas
+matplotlib
+plotly
+plotly_resampler
+tsfresh
+numpy
