@@ -1,0 +1,8 @@
+pandas==1.2.3
+numpy==1.20.2
+ipywidgets==7.6.3
+matplotlib==3.4.1
+pyarrow==3.0.0
+fastparquet==0.5.0
+scikit-learn==0.24.1
+scipy==1.5.3
