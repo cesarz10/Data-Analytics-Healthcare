@@ -1,0 +1,30 @@
+prefixes:
+  obo: http://purl.obolibrary.org/obo/
+
+mappings:
+  symptoms:
+    sources:
+      - ['symptoms.json~jsonpath', "$.symptoms[*]"]
+    s: obo:symptom_$(id)
+
+  people1:
+    sources:
+      - ['patients1.csv~csv']
+    s: obo:person_$(id)
+  
+  people2:
+    sources:
+      - ['patients2.csv~csv']
+    s: obo:person_$(id)
+    po:
+      - [obo:hasAge, $(age), xsd:integer]
+      - [obo:citizenOf, $(country)]
+
+  disease:
+    sources:
+      - ['patients1.csv~csv']
+      - ['patients2.csv~csv']
+    s: obo:disease_$(id)
+    po:
+      - [obo:has_symptom, obo:symptom_$(symptomID1)~iri]
+      - [obo:has_symptom, obo:symptom_$(symptomID2)~iri]

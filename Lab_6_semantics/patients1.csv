@@ -1,0 +1,3 @@
+id,firstname,lastname,age,country,symptomID1,symptomID2
+0,John,Doe,25,UK,0,1
+1,Jane,Smith,32,US,2,3

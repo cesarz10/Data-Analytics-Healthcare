@@ -1,0 +1,29 @@
+{
+	"symptoms": 
+			[
+				{
+					"id": 0,
+					"type": "Bleeding"
+				},
+				{
+					"id": 1,
+					"type": "JointPain"
+				},
+				{
+					"id": 2,
+					"type": "Chills"
+				},
+				{
+					"id": 3,
+					"type": "WeightLoss"
+				},
+				{
+					"id": 4,
+					"type": "Anxiety"
+				},
+				{
+					"id": 5,
+					"type": "Hyperventilation"
+				}
+			]
+}
